@@ -1,11 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
- / {
-     keymap {
-         compatible = "zmk,keymap";
-         default_layer {
-             bindings = <&kp LALT>, <&kp F5>;
-         };
-     };
- };
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <&kp LALT &kp F5>;
+        };
+    };
+};
