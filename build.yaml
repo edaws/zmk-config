@@ -21,3 +21,4 @@
 include:
   - board: nice_nano_v2
     shield: two_percent_milk
+    cmake-args: -DCONFIG_ZMK_USB=y -DCONFIG_BT=n -DCONFIG_ZMK_BLE=n
