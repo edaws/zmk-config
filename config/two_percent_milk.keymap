@@ -2,7 +2,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&kp LEFT_ALT>, <&kp F5>;
+            bindings = <&kp LALT>, <&kp F5>;
         };
     };
 };
