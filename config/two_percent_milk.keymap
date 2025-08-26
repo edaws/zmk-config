@@ -4,7 +4,20 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&kp LALT &kp F5>;
+            // Left key, Right key
+            bindings = <&kp DOWN &kp UP>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        // Press Left+Right together -> Enter
+        combo_enter {
+            timeout-ms = <50>;          // try 30–70ms if you want a different feel
+            key-positions = <0 1>;      // position 0 = left key, 1 = right key
+            layers = <0>;                // only on the default layer
+            bindings = <&kp ENTER>;
         };
     };
 };
